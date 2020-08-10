@@ -1,0 +1,21 @@
+
+<h1>Stupid Coaching</h1>
+<br>
+<%= @answer %>
+ <br>
+ - You
+ <br>
+    <% if @answer == 'I am goin to work'%>
+    <%='Great' %>
+    <% elsif @answer[-1] == '?' %>
+      <%='Silly question, get dressed and go to work!' %>
+    <%else%>
+    <%='I dont care, get dressed and go to work!' %>
+    <% end %>"
+    <br>
+  - Your coach
+  <br>
+    <%= link_to "Ask a new question", ask_path %>
+</p>
+
+
